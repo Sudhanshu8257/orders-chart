@@ -18,7 +18,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Plus } from "lucide-react";
+import { ArrowLeft, Plus } from "lucide-react";
 
 const Page = () => {
   const [orderType, setOrderType] = useState("");
@@ -191,6 +191,13 @@ const Page = () => {
           <OrderTable data={completedOrders} completed={true} />
         </div>
       </div>
+      <Link
+        href="/"
+        className="rounded-xl bg-white px-4 py-2 mx-auto text-base  flex gap-2 items-center justify-center"
+      >
+        {" "}
+        <ArrowLeft size={24} color="black" /> Assignment 1{" "}
+      </Link>
     </div>
   );
 };
